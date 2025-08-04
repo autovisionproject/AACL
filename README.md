@@ -1,9 +1,7 @@
 ## Plasticity by Precision: Exemplar-free Analytic Adaptation for Continual Learning
-
+We provide the complete codebase and pretrained models used to benchmark continual learning performance on three popular benchmark datasets for continual learning.
 ## Model
-<img src="image/AACL1.png" width="500"> 
-
-This repository provides the source code and pretrained models used in our experiments on three popular benchmark datasets for continual learning.
+<img src="image/AACL1.png" width="600"> 
 
 ## Datasets
 We conduct our experiments on the following datasets:
