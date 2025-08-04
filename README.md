@@ -1,7 +1,7 @@
-# Plasticity by Precision: Exemplar-free Analytic Adaptation for Continual Learning
+## Plasticity by Precision: Exemplar-free Analytic Adaptation for Continual Learning
 
-# Model
-<img src="image/AACL1.png" width="600"> 
+## Model
+<img src="image/AACL1.png" width="500"> 
 
 This repository provides the source code and pretrained models used in our experiments on three popular benchmark datasets for continual learning.
 
@@ -9,7 +9,7 @@ This repository provides the source code and pretrained models used in our exper
 We conduct our experiments on the following datasets:
 
 - [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)
-- [ImageNet-R](https://github.com/google-research/robustness_metrics/tree/master/imagenet_r)
+- [ImageNet-R](https://github.com/hendrycks/imagenet-r)
 - [Tiny-ImageNet](https://www.kaggle.com/datasets/ambityga/tiny-imagenet)
 
 ### Download the Pretrained Backbone
