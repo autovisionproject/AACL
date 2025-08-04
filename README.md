@@ -9,10 +9,12 @@ We conduct our experiments on the following datasets:
 - [ImageNet-R](https://github.com/hendrycks/imagenet-r)
 - [Tiny-ImageNet](https://www.kaggle.com/datasets/ambityga/tiny-imagenet)
 
-### Download the Pretrained Backbone
+## Download the Pretrained Backbone
 We use a **DeiT ViT** backbone pretrained on 611 ImageNet classes (excluding 389 overlapping classes with CIFAR and Tiny-ImageNet to avoid data leakage) for all experiments.
-The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD), Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
-**[Download best_checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
+The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD), 
+
+Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
+**[Download DeiT ViT checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
 
 
 ## 4. Confusion Matrix 
