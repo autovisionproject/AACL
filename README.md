@@ -16,5 +16,6 @@ The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD),
 Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
 **[Download DeiT ViT checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
 
+## Tain Model
 
 ## Acknowledgement 
