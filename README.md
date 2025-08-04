@@ -17,9 +17,4 @@ Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
 **[Download DeiT ViT checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
 
 
-## 4. Confusion Matrix 
-
-### 4.1 Dataset
-| PAMAP2 Class-Wise Accuracy | REALDISP Class-Wise Accuracy |
-|:--------------:|:----------------:|
-| <img src="images/pamap2_Confusion_matrix.png" width="350"> | <img src="images/realdisp_Confusion_matrix.png" width="350"> |
+## Acknowledgement 
