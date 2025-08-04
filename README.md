@@ -3,19 +3,16 @@ We provide the complete codebase and pretrained models used to benchmark continu
 ## Model
 <img src="image/AACL1.png" width="600"> 
 
-## Datasets
+## Download Datasets
 We conduct our experiments on the following datasets:
-
 - [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)
 - [ImageNet-R](https://github.com/hendrycks/imagenet-r)
 - [Tiny-ImageNet](https://www.kaggle.com/datasets/ambityga/tiny-imagenet)
 
 ### Download the Pretrained Backbone
-
-Please download the pretrained DeiT ViT network provided by _Learnability and Algorithm for Continual Learning_ from the following link:
-[Download best_checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)
-After downloading, place the model file in the following path:
-
+We use a **DeiT ViT** backbone pretrained on 611 ImageNet classes (excluding 389 overlapping classes with CIFAR and Tiny-ImageNet to avoid data leakage) for all experiments.
+The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD), Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
+**[Download best_checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
 
 
 ## 4. Confusion Matrix 
