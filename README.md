@@ -39,4 +39,4 @@ Precision Matrix (P): A Key Component in AACL
 <img src="image/acc.png" width="700"> 
 
 ## Acknowledgement 
-This work builds upon the [GACL](https://github.com/CHEN-YIZHU/GACL) and [Si-Blurry](https://github.com/KU-VGI/Si-Blurry) implementation. We sincerely thank the authors for their contribution.
+This work builds upon the [GACL](https://github.com/CHEN-YIZHU/GACL) and [Si-Blurry](https://github.com/KU-VGI/Si-Blurry) repos. We sincerely thank the authors for their contribution.
