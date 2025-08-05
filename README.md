@@ -36,4 +36,4 @@ Default values are available in the code.
 ```
 
 ## Acknowledgement 
-This work builds upon the [GACL](https://github.com/CHEN-YIZHU/GACL) implementation. We sincerely thank the original authors for their contribution.
+This work builds upon the [GACL](https://github.com/CHEN-YIZHU/GACL) and [Si-Blurry](https://github.com/KU-VGI/Si-Blurry) implementation. We sincerely thank the authors for their contribution.
