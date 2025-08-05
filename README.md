@@ -8,7 +8,8 @@ We conduct our experiments on the following datasets:
 - [CIFAR-100](https://www.cs.toronto.edu/~kriz/cifar.html)
 - [ImageNet-R](https://github.com/hendrycks/imagenet-r)
 - [Tiny-ImageNet](https://www.kaggle.com/datasets/ambityga/tiny-imagenet)
-Place the dataset file inside the local_datasets directory
+  
+Place the dataset file inside the ```local_datasets``` directory
 
 ## Download the Pretrained Backbone
 We use a **DeiT ViT** backbone pretrained on 611 ImageNet classes (excluding 389 overlapping classes with CIFAR and Tiny-ImageNet to avoid data leakage) for all experiments.
