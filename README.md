@@ -28,7 +28,8 @@ CUDA Version: 12.4
 ```
 Tested Model: [vit,resnet18,resnet34,resnet50,efficientnet_b0]
 Tested Datset: [cifar100,tinyimagenet,imagenet-r]
-python   aacl.py  --model_name <name> --dataset <name> --seed <value>
+
+**Run : python   aacl.py  --model_name <name> --dataset <name> --seed <value>**
 ```
 
 ## Acknowledgement 
