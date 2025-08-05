@@ -36,3 +36,4 @@ Default values are available in the code.
 ```
 
 ## Acknowledgement 
+This work builds upon the [GACL](https://github.com/CHEN-YIZHU/GACL) implementation. We sincerely thank the original authors for their contribution.
