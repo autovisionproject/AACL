@@ -18,13 +18,13 @@ The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD),
 Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
 **[Download DeiT ViT checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
 
-## System Configuration
+### System Configuration
 ```
 Python 3.12.3
 Ubuntu 24.04.1 LTS
 CUDA Version: 12.4
 ```
-## Tain Model
+### Tain Model
 ```
 Tested Model: [vit,resnet18,resnet34,resnet50,efficientnet_b0]
 Tested Datset: [cifar100,tinyimagenet,imagenet-r]
