@@ -24,7 +24,7 @@ Python 3.12.3
 Ubuntu 24.04.1 LTS
 CUDA Version: 12.4
 ```
-### Tain Model
+### Train Model
 ```
 Tested Model: [vit,resnet18,resnet34,resnet50,efficientnet_b0]
 Tested Datset: [cifar100,tinyimagenet,imagenet-r]
