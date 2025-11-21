@@ -1,0 +1,474 @@
+PyTorch version: 2.5.1+cu124
+CUDA available: True
+CUDA device count: 2
+Namespace(mode='aacl', dataset='imagenet-r', n_tasks=5, n=50, m=10, rnd_NM=True, rnd_seed=5, memory_size=0, log_path='results', model_name='resnet50', head='mlp', stm_capacity=1000, classifier_chill=0.01, log_alpha=-300, opt_name='adam', sched_name='default', batchsize=64, hidden_size=256, n_worker=4, lr=0.005, init_model=False, init_opt=False, topk=1, use_amp=False, transforms=[], gpu_transform=True, reg_coef=100, data_dir='local_datasets', debug=False, note='AACL', eval_period=1000, temp_batchsize=None, online_iter=3.0, memory_epoch=256, use_mask=False, use_contrastiv=False, use_last_layer=False, use_afs=False, use_gsf=False, selection_size=1, alpha=0.5, gamma=2.0, margin=0.5, profile=False, streaming_update_sigma=False, shrinkage=0.0001, buffer_size=5000, gamma_main=100.0)
+checking cude True
+CUDA is available. Using GPU: NVIDIA L40S
+Select a CIL method (aacl)
+Building model (resnet50)
+Building model...
+Total Parameters :	34748032
+Learnable Parameters :	11240000
+
+disjoint classes:  [[11, 153, 189, 176, 38, 60, 190, 77, 80, 51, 139, 59], [], [47, 75, 188, 193, 119, 29, 185, 171, 149, 54, 168, 167, 116, 67, 93, 96, 195, 23, 64, 95, 37, 61, 40, 35, 109, 57, 97, 25, 166, 49, 3, 44, 148, 182, 87, 178, 184, 85, 45, 15, 84, 127, 131, 56, 135, 81, 102], [26, 181, 125, 105, 163, 129, 133, 107, 108, 128, 41, 192, 46, 83, 65, 33, 13], [73, 120, 0, 30, 94, 196, 31, 101, 137, 172, 151, 88, 150, 111, 130, 154, 20, 114, 5, 140, 92, 90, 121, 161]]
+blurry classes:  [[112, 21, 32, 174, 100, 89], [82, 179, 106, 16, 6, 110, 62, 24, 42, 98, 175, 10, 18, 118, 152, 27, 43, 194, 162, 2, 158, 199, 173, 72, 164, 34, 165, 157, 180, 155, 132, 69, 156, 12, 22, 186, 4, 146, 53], [122, 147, 63, 160, 8, 70], [58, 142, 7, 136, 169, 86, 124, 170, 36, 19, 74, 143, 103, 145, 144, 117, 14, 187, 39, 159, 9, 52, 198, 115, 126, 134, 191, 68, 48, 177, 71, 123, 1, 50, 104, 78, 197, 17, 141, 99, 91, 113, 28, 66, 138, 183, 76], [79, 55]]
+blurry indices:  1299
+task 0: disjoint 1447, blurry 861
+task 1: disjoint 0, blurry 5218
+task 2: disjoint 4802, blurry 818
+task 3: disjoint 2083, blurry 5892
+task 4: disjoint 2675, blurry 204
+Incrementally training 5 tasks
+Begin train for task0
+
+##################################################
+# Task 0 Session
+##################################################
+
+[2-1] Prepare a datalist for the current task
+Train | Sample # 64 | train_acc 1.0000 | Num_Classes 21 | running_time 0:00:04 | ETA 0:26:29
+Train | Sample # 128 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:06 | ETA 0:19:55
+Train | Sample # 192 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:08 | ETA 0:17:42
+Train | Sample # 256 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:10 | ETA 0:16:34
+Train | Sample # 320 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:12 | ETA 0:15:53
+Train | Sample # 384 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:15 | ETA 0:15:25
+Train | Sample # 448 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:17 | ETA 0:15:04
+Train | Sample # 512 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:19 | ETA 0:14:48
+Train | Sample # 576 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:21 | ETA 0:14:35
+Train | Sample # 640 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:23 | ETA 0:14:24
+Train | Sample # 704 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:25 | ETA 0:14:14
+Train | Sample # 768 | train_acc 0.9896 | Num_Classes 24 | running_time 0:00:27 | ETA 0:14:06
+Train | Sample # 832 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:30 | ETA 0:13:59
+Train | Sample # 896 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:32 | ETA 0:13:53
+Train | Sample # 960 | train_acc 0.9896 | Num_Classes 24 | running_time 0:00:34 | ETA 0:13:47
+Train | Sample # 1024 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:36 | ETA 0:13:41
+Test | Sample # 1024 | test_acc 0.7102 | 
+Train | Sample # 1088 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:40 | ETA 0:14:12
+Train | Sample # 1152 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:42 | ETA 0:14:06
+Train | Sample # 1216 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:44 | ETA 0:13:59
+Train | Sample # 1280 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:46 | ETA 0:13:53
+Train | Sample # 1344 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:49 | ETA 0:13:48
+Train | Sample # 1408 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:51 | ETA 0:13:42
+Train | Sample # 1472 | train_acc 0.9948 | Num_Classes 24 | running_time 0:00:53 | ETA 0:13:37
+Train | Sample # 1536 | train_acc 0.9896 | Num_Classes 24 | running_time 0:00:55 | ETA 0:13:33
+Train | Sample # 1600 | train_acc 0.9844 | Num_Classes 24 | running_time 0:00:57 | ETA 0:13:28
+Train | Sample # 1664 | train_acc 1.0000 | Num_Classes 24 | running_time 0:00:59 | ETA 0:13:24
+Train | Sample # 1728 | train_acc 0.9792 | Num_Classes 24 | running_time 0:01:02 | ETA 0:13:20
+Train | Sample # 1792 | train_acc 0.9844 | Num_Classes 24 | running_time 0:01:04 | ETA 0:13:16
+Train | Sample # 1856 | train_acc 0.9896 | Num_Classes 24 | running_time 0:01:06 | ETA 0:13:12
+Train | Sample # 1920 | train_acc 0.9948 | Num_Classes 24 | running_time 0:01:08 | ETA 0:13:08
+Train | Sample # 1984 | train_acc 0.9948 | Num_Classes 24 | running_time 0:01:10 | ETA 0:13:04
+Train | Sample # 2048 | train_acc 0.9896 | Num_Classes 24 | running_time 0:01:12 | ETA 0:13:01
+Test | Sample # 2048 | test_acc 0.7413 | 
+Train | Sample # 2112 | train_acc 0.9896 | Num_Classes 24 | running_time 0:01:16 | ETA 0:13:15
+Train | Sample # 2176 | train_acc 0.9948 | Num_Classes 24 | running_time 0:01:18 | ETA 0:13:11
+Train | Sample # 2240 | train_acc 0.9896 | Num_Classes 24 | running_time 0:01:21 | ETA 0:13:07
+Train | Sample # 2304 | train_acc 0.9896 | Num_Classes 24 | running_time 0:01:23 | ETA 0:13:04
+Train | Sample # 2308 | train_acc 0.9167 | Num_Classes 24 | running_time 0:01:25 | ETA 0:13:21
+Test | Sample # 2308 | test_acc 0.7413 | 
+[2-4] Update the information for the current task
+[2-5] Report task result
+Begin train for task1
+
+##################################################
+# Task 1 Session
+##################################################
+
+[2-1] Prepare a datalist for the current task
+Train | Sample # 2372 | train_acc 0.8542 | Num_Classes 52 | running_time 0:01:29 | ETA 0:13:37
+Train | Sample # 2436 | train_acc 0.9062 | Num_Classes 59 | running_time 0:01:31 | ETA 0:13:32
+Train | Sample # 2500 | train_acc 0.8802 | Num_Classes 62 | running_time 0:01:33 | ETA 0:13:28
+Train | Sample # 2564 | train_acc 0.9219 | Num_Classes 62 | running_time 0:01:36 | ETA 0:13:23
+Train | Sample # 2628 | train_acc 0.9115 | Num_Classes 62 | running_time 0:01:38 | ETA 0:13:19
+Train | Sample # 2692 | train_acc 0.9219 | Num_Classes 62 | running_time 0:01:40 | ETA 0:13:15
+Train | Sample # 2756 | train_acc 0.9375 | Num_Classes 62 | running_time 0:01:42 | ETA 0:13:10
+Train | Sample # 2820 | train_acc 0.9583 | Num_Classes 62 | running_time 0:01:44 | ETA 0:13:06
+Train | Sample # 2884 | train_acc 0.9583 | Num_Classes 62 | running_time 0:01:46 | ETA 0:13:03
+Train | Sample # 2948 | train_acc 0.9323 | Num_Classes 62 | running_time 0:01:49 | ETA 0:12:59
+Train | Sample # 3012 | train_acc 0.9479 | Num_Classes 62 | running_time 0:01:51 | ETA 0:12:55
+Test | Sample # 3012 | test_acc 0.5271 | 
+Train | Sample # 3076 | train_acc 0.9271 | Num_Classes 62 | running_time 0:01:56 | ETA 0:13:14
+Train | Sample # 3140 | train_acc 0.9688 | Num_Classes 62 | running_time 0:01:58 | ETA 0:13:10
+Train | Sample # 3204 | train_acc 0.9635 | Num_Classes 62 | running_time 0:02:01 | ETA 0:13:06
+Train | Sample # 3268 | train_acc 0.9635 | Num_Classes 62 | running_time 0:02:03 | ETA 0:13:02
+Train | Sample # 3332 | train_acc 0.9323 | Num_Classes 62 | running_time 0:02:05 | ETA 0:12:58
+Train | Sample # 3396 | train_acc 0.9531 | Num_Classes 62 | running_time 0:02:07 | ETA 0:12:54
+Train | Sample # 3460 | train_acc 0.9375 | Num_Classes 62 | running_time 0:02:09 | ETA 0:12:50
+Train | Sample # 3524 | train_acc 0.9479 | Num_Classes 62 | running_time 0:02:11 | ETA 0:12:46
+Train | Sample # 3588 | train_acc 0.9583 | Num_Classes 62 | running_time 0:02:14 | ETA 0:12:42
+Train | Sample # 3652 | train_acc 0.9479 | Num_Classes 62 | running_time 0:02:16 | ETA 0:12:39
+Train | Sample # 3716 | train_acc 0.9688 | Num_Classes 62 | running_time 0:02:18 | ETA 0:12:35
+Train | Sample # 3780 | train_acc 0.9531 | Num_Classes 62 | running_time 0:02:20 | ETA 0:12:32
+Train | Sample # 3844 | train_acc 0.9688 | Num_Classes 62 | running_time 0:02:22 | ETA 0:12:28
+Train | Sample # 3908 | train_acc 0.9688 | Num_Classes 62 | running_time 0:02:24 | ETA 0:12:25
+Train | Sample # 3972 | train_acc 0.9740 | Num_Classes 62 | running_time 0:02:27 | ETA 0:12:21
+Train | Sample # 4036 | train_acc 0.9531 | Num_Classes 62 | running_time 0:02:29 | ETA 0:12:18
+Test | Sample # 4036 | test_acc 0.6221 | 
+Train | Sample # 4100 | train_acc 0.9479 | Num_Classes 62 | running_time 0:02:34 | ETA 0:12:31
+Train | Sample # 4164 | train_acc 0.9271 | Num_Classes 62 | running_time 0:02:36 | ETA 0:12:27
+Train | Sample # 4228 | train_acc 0.9323 | Num_Classes 62 | running_time 0:02:39 | ETA 0:12:24
+Train | Sample # 4292 | train_acc 0.9740 | Num_Classes 62 | running_time 0:02:41 | ETA 0:12:20
+Train | Sample # 4356 | train_acc 0.9531 | Num_Classes 62 | running_time 0:02:43 | ETA 0:12:17
+Train | Sample # 4420 | train_acc 0.9583 | Num_Classes 62 | running_time 0:02:45 | ETA 0:12:13
+Train | Sample # 4484 | train_acc 0.9323 | Num_Classes 62 | running_time 0:02:47 | ETA 0:12:10
+Train | Sample # 4548 | train_acc 0.9896 | Num_Classes 62 | running_time 0:02:49 | ETA 0:12:06
+Train | Sample # 4612 | train_acc 0.9479 | Num_Classes 62 | running_time 0:02:52 | ETA 0:12:03
+Train | Sample # 4676 | train_acc 0.9583 | Num_Classes 62 | running_time 0:02:54 | ETA 0:12:00
+Train | Sample # 4740 | train_acc 0.9531 | Num_Classes 62 | running_time 0:02:56 | ETA 0:11:56
+Train | Sample # 4804 | train_acc 0.9479 | Num_Classes 62 | running_time 0:02:58 | ETA 0:11:53
+Train | Sample # 4868 | train_acc 0.9688 | Num_Classes 62 | running_time 0:03:00 | ETA 0:11:50
+Train | Sample # 4932 | train_acc 0.9115 | Num_Classes 62 | running_time 0:03:02 | ETA 0:11:47
+Train | Sample # 4996 | train_acc 0.9479 | Num_Classes 62 | running_time 0:03:05 | ETA 0:11:44
+Train | Sample # 5060 | train_acc 0.9375 | Num_Classes 62 | running_time 0:03:07 | ETA 0:11:40
+Test | Sample # 5060 | test_acc 0.6579 | 
+Train | Sample # 5124 | train_acc 0.9688 | Num_Classes 62 | running_time 0:03:12 | ETA 0:11:49
+Train | Sample # 5188 | train_acc 0.9479 | Num_Classes 62 | running_time 0:03:14 | ETA 0:11:46
+Train | Sample # 5252 | train_acc 0.9115 | Num_Classes 62 | running_time 0:03:17 | ETA 0:11:43
+Train | Sample # 5316 | train_acc 0.9479 | Num_Classes 62 | running_time 0:03:19 | ETA 0:11:40
+Train | Sample # 5380 | train_acc 0.9167 | Num_Classes 62 | running_time 0:03:21 | ETA 0:11:36
+Train | Sample # 5444 | train_acc 0.9479 | Num_Classes 62 | running_time 0:03:23 | ETA 0:11:33
+Train | Sample # 5508 | train_acc 0.9167 | Num_Classes 62 | running_time 0:03:25 | ETA 0:11:30
+Train | Sample # 5572 | train_acc 0.9375 | Num_Classes 62 | running_time 0:03:27 | ETA 0:11:27
+Train | Sample # 5636 | train_acc 0.9323 | Num_Classes 62 | running_time 0:03:30 | ETA 0:11:24
+Train | Sample # 5700 | train_acc 0.9323 | Num_Classes 62 | running_time 0:03:32 | ETA 0:11:21
+Train | Sample # 5764 | train_acc 0.9688 | Num_Classes 62 | running_time 0:03:34 | ETA 0:11:18
+Train | Sample # 5828 | train_acc 0.9688 | Num_Classes 62 | running_time 0:03:36 | ETA 0:11:15
+Train | Sample # 5892 | train_acc 0.9271 | Num_Classes 62 | running_time 0:03:38 | ETA 0:11:12
+Train | Sample # 5956 | train_acc 0.9635 | Num_Classes 62 | running_time 0:03:40 | ETA 0:11:08
+Train | Sample # 6020 | train_acc 0.9479 | Num_Classes 62 | running_time 0:03:42 | ETA 0:11:06
+Test | Sample # 6020 | test_acc 0.6720 | 
+Train | Sample # 6084 | train_acc 0.9323 | Num_Classes 62 | running_time 0:03:48 | ETA 0:11:13
+Train | Sample # 6148 | train_acc 0.9010 | Num_Classes 62 | running_time 0:03:50 | ETA 0:11:10
+Train | Sample # 6212 | train_acc 0.9271 | Num_Classes 62 | running_time 0:03:52 | ETA 0:11:06
+Train | Sample # 6276 | train_acc 0.9740 | Num_Classes 62 | running_time 0:03:55 | ETA 0:11:03
+Train | Sample # 6340 | train_acc 0.9427 | Num_Classes 62 | running_time 0:03:57 | ETA 0:11:00
+Train | Sample # 6404 | train_acc 0.9115 | Num_Classes 62 | running_time 0:03:59 | ETA 0:10:57
+Train | Sample # 6468 | train_acc 0.9323 | Num_Classes 62 | running_time 0:04:01 | ETA 0:10:54
+Train | Sample # 6532 | train_acc 0.9219 | Num_Classes 62 | running_time 0:04:03 | ETA 0:10:51
+Train | Sample # 6596 | train_acc 0.9479 | Num_Classes 62 | running_time 0:04:05 | ETA 0:10:48
+Train | Sample # 6660 | train_acc 0.9323 | Num_Classes 62 | running_time 0:04:08 | ETA 0:10:45
+Train | Sample # 6724 | train_acc 0.9635 | Num_Classes 62 | running_time 0:04:10 | ETA 0:10:42
+Train | Sample # 6788 | train_acc 0.9375 | Num_Classes 62 | running_time 0:04:12 | ETA 0:10:39
+Train | Sample # 6852 | train_acc 0.9479 | Num_Classes 62 | running_time 0:04:14 | ETA 0:10:37
+Train | Sample # 6916 | train_acc 0.9427 | Num_Classes 62 | running_time 0:04:16 | ETA 0:10:34
+Train | Sample # 6980 | train_acc 0.9635 | Num_Classes 62 | running_time 0:04:18 | ETA 0:10:31
+Train | Sample # 7044 | train_acc 0.9635 | Num_Classes 62 | running_time 0:04:21 | ETA 0:10:28
+Test | Sample # 7044 | test_acc 0.6791 | 
+Train | Sample # 7108 | train_acc 0.9427 | Num_Classes 62 | running_time 0:04:26 | ETA 0:10:33
+Train | Sample # 7172 | train_acc 0.9375 | Num_Classes 62 | running_time 0:04:28 | ETA 0:10:30
+Train | Sample # 7236 | train_acc 0.9427 | Num_Classes 62 | running_time 0:04:31 | ETA 0:10:27
+Train | Sample # 7300 | train_acc 0.9271 | Num_Classes 62 | running_time 0:04:33 | ETA 0:10:24
+Train | Sample # 7364 | train_acc 0.9583 | Num_Classes 62 | running_time 0:04:35 | ETA 0:10:22
+Train | Sample # 7428 | train_acc 0.9740 | Num_Classes 62 | running_time 0:04:37 | ETA 0:10:19
+Train | Sample # 7492 | train_acc 0.9583 | Num_Classes 62 | running_time 0:04:39 | ETA 0:10:16
+Train | Sample # 7526 | train_acc 0.9216 | Num_Classes 62 | running_time 0:04:41 | ETA 0:10:16
+Test | Sample # 7526 | test_acc 0.6791 | 
+[2-4] Update the information for the current task
+[2-5] Report task result
+Begin train for task2
+
+##################################################
+# Task 2 Session
+##################################################
+
+[2-1] Prepare a datalist for the current task
+Train | Sample # 7590 | train_acc 0.6250 | Num_Classes 94 | running_time 0:04:47 | ETA 0:10:22
+Train | Sample # 7654 | train_acc 0.6562 | Num_Classes 107 | running_time 0:04:50 | ETA 0:10:19
+Train | Sample # 7718 | train_acc 0.6562 | Num_Classes 111 | running_time 0:04:52 | ETA 0:10:16
+Train | Sample # 7782 | train_acc 0.6979 | Num_Classes 112 | running_time 0:04:54 | ETA 0:10:13
+Train | Sample # 7846 | train_acc 0.6823 | Num_Classes 112 | running_time 0:04:56 | ETA 0:10:10
+Train | Sample # 7910 | train_acc 0.7188 | Num_Classes 113 | running_time 0:04:58 | ETA 0:10:07
+Train | Sample # 7974 | train_acc 0.7552 | Num_Classes 113 | running_time 0:05:01 | ETA 0:10:04
+Train | Sample # 8038 | train_acc 0.7344 | Num_Classes 113 | running_time 0:05:03 | ETA 0:10:02
+Test | Sample # 8038 | test_acc 0.4836 | 
+Train | Sample # 8102 | train_acc 0.7083 | Num_Classes 113 | running_time 0:05:10 | ETA 0:10:08
+Train | Sample # 8166 | train_acc 0.7396 | Num_Classes 113 | running_time 0:05:12 | ETA 0:10:05
+Train | Sample # 8230 | train_acc 0.7812 | Num_Classes 113 | running_time 0:05:14 | ETA 0:10:02
+Train | Sample # 8294 | train_acc 0.7812 | Num_Classes 113 | running_time 0:05:16 | ETA 0:09:59
+Train | Sample # 8358 | train_acc 0.7344 | Num_Classes 113 | running_time 0:05:18 | ETA 0:09:56
+Train | Sample # 8422 | train_acc 0.8438 | Num_Classes 113 | running_time 0:05:21 | ETA 0:09:53
+Train | Sample # 8486 | train_acc 0.8490 | Num_Classes 113 | running_time 0:05:23 | ETA 0:09:50
+Train | Sample # 8550 | train_acc 0.8073 | Num_Classes 113 | running_time 0:05:25 | ETA 0:09:48
+Train | Sample # 8614 | train_acc 0.8073 | Num_Classes 113 | running_time 0:05:27 | ETA 0:09:45
+Train | Sample # 8678 | train_acc 0.8438 | Num_Classes 113 | running_time 0:05:29 | ETA 0:09:42
+Train | Sample # 8742 | train_acc 0.7865 | Num_Classes 113 | running_time 0:05:31 | ETA 0:09:39
+Train | Sample # 8806 | train_acc 0.7917 | Num_Classes 113 | running_time 0:05:34 | ETA 0:09:36
+Train | Sample # 8870 | train_acc 0.8229 | Num_Classes 113 | running_time 0:05:36 | ETA 0:09:33
+Train | Sample # 8934 | train_acc 0.8281 | Num_Classes 113 | running_time 0:05:38 | ETA 0:09:30
+Train | Sample # 8998 | train_acc 0.7969 | Num_Classes 113 | running_time 0:05:40 | ETA 0:09:28
+Train | Sample # 9062 | train_acc 0.8854 | Num_Classes 113 | running_time 0:05:42 | ETA 0:09:25
+Test | Sample # 9062 | test_acc 0.5504 | 
+Train | Sample # 9126 | train_acc 0.8438 | Num_Classes 113 | running_time 0:05:49 | ETA 0:09:30
+Train | Sample # 9190 | train_acc 0.8490 | Num_Classes 113 | running_time 0:05:51 | ETA 0:09:27
+Train | Sample # 9254 | train_acc 0.8750 | Num_Classes 113 | running_time 0:05:54 | ETA 0:09:24
+Train | Sample # 9318 | train_acc 0.7969 | Num_Classes 113 | running_time 0:05:56 | ETA 0:09:21
+Train | Sample # 9382 | train_acc 0.8281 | Num_Classes 113 | running_time 0:05:58 | ETA 0:09:18
+Train | Sample # 9446 | train_acc 0.8073 | Num_Classes 113 | running_time 0:06:00 | ETA 0:09:15
+Train | Sample # 9510 | train_acc 0.8438 | Num_Classes 113 | running_time 0:06:02 | ETA 0:09:12
+Train | Sample # 9574 | train_acc 0.8438 | Num_Classes 113 | running_time 0:06:05 | ETA 0:09:10
+Train | Sample # 9638 | train_acc 0.8490 | Num_Classes 113 | running_time 0:06:07 | ETA 0:09:07
+Train | Sample # 9702 | train_acc 0.7552 | Num_Classes 113 | running_time 0:06:09 | ETA 0:09:04
+Train | Sample # 9766 | train_acc 0.8750 | Num_Classes 113 | running_time 0:06:11 | ETA 0:09:01
+Train | Sample # 9830 | train_acc 0.8333 | Num_Classes 113 | running_time 0:06:13 | ETA 0:08:58
+Train | Sample # 9894 | train_acc 0.8594 | Num_Classes 113 | running_time 0:06:16 | ETA 0:08:56
+Train | Sample # 9958 | train_acc 0.8281 | Num_Classes 113 | running_time 0:06:18 | ETA 0:08:53
+Train | Sample # 10022 | train_acc 0.8906 | Num_Classes 113 | running_time 0:06:20 | ETA 0:08:50
+Test | Sample # 10022 | test_acc 0.5723 | 
+Train | Sample # 10086 | train_acc 0.8385 | Num_Classes 113 | running_time 0:06:27 | ETA 0:08:54
+Train | Sample # 10150 | train_acc 0.8438 | Num_Classes 113 | running_time 0:06:29 | ETA 0:08:51
+Train | Sample # 10214 | train_acc 0.9062 | Num_Classes 113 | running_time 0:06:31 | ETA 0:08:48
+Train | Sample # 10278 | train_acc 0.8333 | Num_Classes 113 | running_time 0:06:33 | ETA 0:08:45
+Train | Sample # 10342 | train_acc 0.8333 | Num_Classes 113 | running_time 0:06:35 | ETA 0:08:42
+Train | Sample # 10406 | train_acc 0.8646 | Num_Classes 113 | running_time 0:06:38 | ETA 0:08:40
+Train | Sample # 10470 | train_acc 0.8802 | Num_Classes 113 | running_time 0:06:40 | ETA 0:08:37
+Train | Sample # 10534 | train_acc 0.8646 | Num_Classes 113 | running_time 0:06:42 | ETA 0:08:34
+Train | Sample # 10598 | train_acc 0.8958 | Num_Classes 113 | running_time 0:06:44 | ETA 0:08:31
+Train | Sample # 10662 | train_acc 0.8802 | Num_Classes 113 | running_time 0:06:46 | ETA 0:08:29
+Train | Sample # 10726 | train_acc 0.8646 | Num_Classes 113 | running_time 0:06:49 | ETA 0:08:26
+Train | Sample # 10790 | train_acc 0.8073 | Num_Classes 113 | running_time 0:06:51 | ETA 0:08:23
+Train | Sample # 10854 | train_acc 0.8750 | Num_Classes 113 | running_time 0:06:53 | ETA 0:08:20
+Train | Sample # 10918 | train_acc 0.8646 | Num_Classes 113 | running_time 0:06:55 | ETA 0:08:18
+Train | Sample # 10982 | train_acc 0.8385 | Num_Classes 113 | running_time 0:06:57 | ETA 0:08:15
+Train | Sample # 11046 | train_acc 0.8021 | Num_Classes 113 | running_time 0:07:00 | ETA 0:08:12
+Test | Sample # 11046 | test_acc 0.6046 | 
+Train | Sample # 11110 | train_acc 0.8802 | Num_Classes 113 | running_time 0:07:06 | ETA 0:08:15
+Train | Sample # 11174 | train_acc 0.8385 | Num_Classes 113 | running_time 0:07:09 | ETA 0:08:12
+Train | Sample # 11238 | train_acc 0.8854 | Num_Classes 113 | running_time 0:07:11 | ETA 0:08:09
+Train | Sample # 11302 | train_acc 0.8490 | Num_Classes 113 | running_time 0:07:13 | ETA 0:08:06
+Train | Sample # 11366 | train_acc 0.8750 | Num_Classes 113 | running_time 0:07:15 | ETA 0:08:04
+Train | Sample # 11430 | train_acc 0.9010 | Num_Classes 113 | running_time 0:07:17 | ETA 0:08:01
+Train | Sample # 11494 | train_acc 0.8906 | Num_Classes 113 | running_time 0:07:20 | ETA 0:07:58
+Train | Sample # 11558 | train_acc 0.8490 | Num_Classes 113 | running_time 0:07:22 | ETA 0:07:56
+Train | Sample # 11622 | train_acc 0.8958 | Num_Classes 113 | running_time 0:07:24 | ETA 0:07:53
+Train | Sample # 11686 | train_acc 0.8438 | Num_Classes 113 | running_time 0:07:26 | ETA 0:07:50
+Train | Sample # 11750 | train_acc 0.8854 | Num_Classes 113 | running_time 0:07:28 | ETA 0:07:47
+Train | Sample # 11814 | train_acc 0.8698 | Num_Classes 113 | running_time 0:07:30 | ETA 0:07:45
+Train | Sample # 11878 | train_acc 0.9010 | Num_Classes 113 | running_time 0:07:33 | ETA 0:07:42
+Train | Sample # 11942 | train_acc 0.9062 | Num_Classes 113 | running_time 0:07:35 | ETA 0:07:39
+Train | Sample # 12006 | train_acc 0.8698 | Num_Classes 113 | running_time 0:07:37 | ETA 0:07:37
+Test | Sample # 12006 | test_acc 0.6134 | 
+Train | Sample # 12070 | train_acc 0.8490 | Num_Classes 113 | running_time 0:07:44 | ETA 0:07:38
+Train | Sample # 12134 | train_acc 0.8698 | Num_Classes 113 | running_time 0:07:46 | ETA 0:07:36
+Train | Sample # 12198 | train_acc 0.8698 | Num_Classes 113 | running_time 0:07:48 | ETA 0:07:33
+Train | Sample # 12262 | train_acc 0.8385 | Num_Classes 113 | running_time 0:07:50 | ETA 0:07:30
+Train | Sample # 12326 | train_acc 0.8854 | Num_Classes 113 | running_time 0:07:53 | ETA 0:07:28
+Train | Sample # 12390 | train_acc 0.7865 | Num_Classes 113 | running_time 0:07:55 | ETA 0:07:25
+Train | Sample # 12454 | train_acc 0.9115 | Num_Classes 113 | running_time 0:07:57 | ETA 0:07:22
+Train | Sample # 12518 | train_acc 0.8594 | Num_Classes 113 | running_time 0:07:59 | ETA 0:07:19
+Train | Sample # 12582 | train_acc 0.8906 | Num_Classes 113 | running_time 0:08:01 | ETA 0:07:17
+Train | Sample # 12646 | train_acc 0.8594 | Num_Classes 113 | running_time 0:08:03 | ETA 0:07:14
+Train | Sample # 12710 | train_acc 0.9010 | Num_Classes 113 | running_time 0:08:06 | ETA 0:07:11
+Train | Sample # 12774 | train_acc 0.8906 | Num_Classes 113 | running_time 0:08:08 | ETA 0:07:09
+Train | Sample # 12838 | train_acc 0.8594 | Num_Classes 113 | running_time 0:08:10 | ETA 0:07:06
+Train | Sample # 12902 | train_acc 0.8438 | Num_Classes 113 | running_time 0:08:12 | ETA 0:07:03
+Train | Sample # 12966 | train_acc 0.8802 | Num_Classes 113 | running_time 0:08:14 | ETA 0:07:01
+Train | Sample # 13030 | train_acc 0.9062 | Num_Classes 113 | running_time 0:08:17 | ETA 0:06:58
+Test | Sample # 13030 | test_acc 0.6075 | 
+Train | Sample # 13094 | train_acc 0.9010 | Num_Classes 113 | running_time 0:08:23 | ETA 0:06:59
+Train | Sample # 13146 | train_acc 0.8910 | Num_Classes 113 | running_time 0:08:26 | ETA 0:06:57
+Test | Sample # 13146 | test_acc 0.6075 | 
+[2-4] Update the information for the current task
+[2-5] Report task result
+Begin train for task3
+
+##################################################
+# Task 3 Session
+##################################################
+
+[2-1] Prepare a datalist for the current task
+Train | Sample # 13210 | train_acc 0.4323 | Num_Classes 154 | running_time 0:08:33 | ETA 0:06:59
+Train | Sample # 13274 | train_acc 0.4688 | Num_Classes 166 | running_time 0:08:35 | ETA 0:06:56
+Train | Sample # 13338 | train_acc 0.4115 | Num_Classes 168 | running_time 0:08:37 | ETA 0:06:54
+Train | Sample # 13402 | train_acc 0.5000 | Num_Classes 174 | running_time 0:08:40 | ETA 0:06:51
+Train | Sample # 13466 | train_acc 0.5469 | Num_Classes 175 | running_time 0:08:42 | ETA 0:06:48
+Train | Sample # 13530 | train_acc 0.5885 | Num_Classes 175 | running_time 0:08:44 | ETA 0:06:45
+Train | Sample # 13594 | train_acc 0.6302 | Num_Classes 176 | running_time 0:08:46 | ETA 0:06:43
+Train | Sample # 13658 | train_acc 0.6094 | Num_Classes 176 | running_time 0:08:49 | ETA 0:06:40
+Train | Sample # 13722 | train_acc 0.5833 | Num_Classes 176 | running_time 0:08:51 | ETA 0:06:37
+Train | Sample # 13786 | train_acc 0.5729 | Num_Classes 176 | running_time 0:08:53 | ETA 0:06:35
+Train | Sample # 13850 | train_acc 0.5885 | Num_Classes 176 | running_time 0:08:55 | ETA 0:06:32
+Train | Sample # 13914 | train_acc 0.6771 | Num_Classes 176 | running_time 0:08:57 | ETA 0:06:29
+Train | Sample # 13978 | train_acc 0.6198 | Num_Classes 176 | running_time 0:09:00 | ETA 0:06:27
+Train | Sample # 14042 | train_acc 0.5938 | Num_Classes 176 | running_time 0:09:02 | ETA 0:06:24
+Test | Sample # 14042 | test_acc 0.4474 | 
+Train | Sample # 14106 | train_acc 0.7083 | Num_Classes 176 | running_time 0:09:11 | ETA 0:06:27
+Train | Sample # 14170 | train_acc 0.6875 | Num_Classes 176 | running_time 0:09:14 | ETA 0:06:24
+Train | Sample # 14234 | train_acc 0.7448 | Num_Classes 176 | running_time 0:09:16 | ETA 0:06:21
+Train | Sample # 14298 | train_acc 0.6615 | Num_Classes 176 | running_time 0:09:18 | ETA 0:06:18
+Train | Sample # 14362 | train_acc 0.6927 | Num_Classes 176 | running_time 0:09:20 | ETA 0:06:16
+Train | Sample # 14426 | train_acc 0.7656 | Num_Classes 176 | running_time 0:09:22 | ETA 0:06:13
+Train | Sample # 14490 | train_acc 0.7448 | Num_Classes 176 | running_time 0:09:25 | ETA 0:06:10
+Train | Sample # 14554 | train_acc 0.6562 | Num_Classes 176 | running_time 0:09:27 | ETA 0:06:08
+Train | Sample # 14618 | train_acc 0.7552 | Num_Classes 176 | running_time 0:09:29 | ETA 0:06:05
+Train | Sample # 14682 | train_acc 0.7396 | Num_Classes 176 | running_time 0:09:31 | ETA 0:06:02
+Train | Sample # 14746 | train_acc 0.7656 | Num_Classes 176 | running_time 0:09:34 | ETA 0:06:00
+Train | Sample # 14810 | train_acc 0.7083 | Num_Classes 176 | running_time 0:09:36 | ETA 0:05:57
+Train | Sample # 14874 | train_acc 0.7031 | Num_Classes 176 | running_time 0:09:38 | ETA 0:05:54
+Train | Sample # 14938 | train_acc 0.7552 | Num_Classes 176 | running_time 0:09:40 | ETA 0:05:52
+Train | Sample # 15002 | train_acc 0.7969 | Num_Classes 176 | running_time 0:09:42 | ETA 0:05:49
+Test | Sample # 15002 | test_acc 0.4907 | 
+Train | Sample # 15066 | train_acc 0.7292 | Num_Classes 176 | running_time 0:09:52 | ETA 0:05:51
+Train | Sample # 15130 | train_acc 0.7344 | Num_Classes 176 | running_time 0:09:54 | ETA 0:05:48
+Train | Sample # 15194 | train_acc 0.7083 | Num_Classes 176 | running_time 0:09:56 | ETA 0:05:45
+Train | Sample # 15258 | train_acc 0.7188 | Num_Classes 176 | running_time 0:09:59 | ETA 0:05:43
+Train | Sample # 15322 | train_acc 0.7969 | Num_Classes 176 | running_time 0:10:01 | ETA 0:05:40
+Train | Sample # 15386 | train_acc 0.7917 | Num_Classes 176 | running_time 0:10:03 | ETA 0:05:37
+Train | Sample # 15450 | train_acc 0.8177 | Num_Classes 176 | running_time 0:10:05 | ETA 0:05:35
+Train | Sample # 15514 | train_acc 0.7969 | Num_Classes 176 | running_time 0:10:07 | ETA 0:05:32
+Train | Sample # 15578 | train_acc 0.6823 | Num_Classes 176 | running_time 0:10:10 | ETA 0:05:29
+Train | Sample # 15642 | train_acc 0.8177 | Num_Classes 176 | running_time 0:10:12 | ETA 0:05:27
+Train | Sample # 15706 | train_acc 0.7760 | Num_Classes 176 | running_time 0:10:14 | ETA 0:05:24
+Train | Sample # 15770 | train_acc 0.8073 | Num_Classes 176 | running_time 0:10:16 | ETA 0:05:21
+Train | Sample # 15834 | train_acc 0.7656 | Num_Classes 176 | running_time 0:10:19 | ETA 0:05:19
+Train | Sample # 15898 | train_acc 0.7760 | Num_Classes 176 | running_time 0:10:21 | ETA 0:05:16
+Train | Sample # 15962 | train_acc 0.8281 | Num_Classes 176 | running_time 0:10:23 | ETA 0:05:13
+Train | Sample # 16026 | train_acc 0.8281 | Num_Classes 176 | running_time 0:10:25 | ETA 0:05:11
+Test | Sample # 16026 | test_acc 0.5169 | 
+Train | Sample # 16090 | train_acc 0.8125 | Num_Classes 176 | running_time 0:10:35 | ETA 0:05:12
+Train | Sample # 16154 | train_acc 0.7812 | Num_Classes 176 | running_time 0:10:37 | ETA 0:05:09
+Train | Sample # 16218 | train_acc 0.8177 | Num_Classes 176 | running_time 0:10:39 | ETA 0:05:06
+Train | Sample # 16282 | train_acc 0.7500 | Num_Classes 176 | running_time 0:10:41 | ETA 0:05:04
+Train | Sample # 16346 | train_acc 0.7344 | Num_Classes 176 | running_time 0:10:44 | ETA 0:05:01
+Train | Sample # 16410 | train_acc 0.8229 | Num_Classes 176 | running_time 0:10:46 | ETA 0:04:58
+Train | Sample # 16474 | train_acc 0.8177 | Num_Classes 176 | running_time 0:10:48 | ETA 0:04:56
+Train | Sample # 16538 | train_acc 0.7812 | Num_Classes 176 | running_time 0:10:50 | ETA 0:04:53
+Train | Sample # 16602 | train_acc 0.8021 | Num_Classes 176 | running_time 0:10:53 | ETA 0:04:51
+Train | Sample # 16666 | train_acc 0.7292 | Num_Classes 176 | running_time 0:10:55 | ETA 0:04:48
+Train | Sample # 16730 | train_acc 0.7812 | Num_Classes 176 | running_time 0:10:57 | ETA 0:04:45
+Train | Sample # 16794 | train_acc 0.7604 | Num_Classes 176 | running_time 0:10:59 | ETA 0:04:43
+Train | Sample # 16858 | train_acc 0.7969 | Num_Classes 176 | running_time 0:11:01 | ETA 0:04:40
+Train | Sample # 16922 | train_acc 0.7656 | Num_Classes 176 | running_time 0:11:04 | ETA 0:04:37
+Train | Sample # 16986 | train_acc 0.7917 | Num_Classes 176 | running_time 0:11:06 | ETA 0:04:35
+Train | Sample # 17050 | train_acc 0.7969 | Num_Classes 176 | running_time 0:11:08 | ETA 0:04:32
+Test | Sample # 17050 | test_acc 0.5493 | 
+Train | Sample # 17114 | train_acc 0.7760 | Num_Classes 176 | running_time 0:11:18 | ETA 0:04:32
+Train | Sample # 17178 | train_acc 0.7500 | Num_Classes 176 | running_time 0:11:20 | ETA 0:04:30
+Train | Sample # 17242 | train_acc 0.8385 | Num_Classes 176 | running_time 0:11:22 | ETA 0:04:27
+Train | Sample # 17306 | train_acc 0.8958 | Num_Classes 176 | running_time 0:11:24 | ETA 0:04:24
+Train | Sample # 17370 | train_acc 0.8177 | Num_Classes 176 | running_time 0:11:26 | ETA 0:04:22
+Train | Sample # 17434 | train_acc 0.7812 | Num_Classes 176 | running_time 0:11:29 | ETA 0:04:19
+Train | Sample # 17498 | train_acc 0.8229 | Num_Classes 176 | running_time 0:11:31 | ETA 0:04:16
+Train | Sample # 17562 | train_acc 0.8438 | Num_Classes 176 | running_time 0:11:33 | ETA 0:04:14
+Train | Sample # 17626 | train_acc 0.8490 | Num_Classes 176 | running_time 0:11:35 | ETA 0:04:11
+Train | Sample # 17690 | train_acc 0.8281 | Num_Classes 176 | running_time 0:11:38 | ETA 0:04:08
+Train | Sample # 17754 | train_acc 0.8594 | Num_Classes 176 | running_time 0:11:40 | ETA 0:04:06
+Train | Sample # 17818 | train_acc 0.8073 | Num_Classes 176 | running_time 0:11:42 | ETA 0:04:03
+Train | Sample # 17882 | train_acc 0.8281 | Num_Classes 176 | running_time 0:11:44 | ETA 0:04:01
+Train | Sample # 17946 | train_acc 0.8073 | Num_Classes 176 | running_time 0:11:46 | ETA 0:03:58
+Train | Sample # 18010 | train_acc 0.8177 | Num_Classes 176 | running_time 0:11:49 | ETA 0:03:55
+Test | Sample # 18010 | test_acc 0.5581 | 
+Train | Sample # 18074 | train_acc 0.8385 | Num_Classes 176 | running_time 0:11:58 | ETA 0:03:55
+Train | Sample # 18138 | train_acc 0.8125 | Num_Classes 176 | running_time 0:12:00 | ETA 0:03:53
+Train | Sample # 18202 | train_acc 0.8229 | Num_Classes 176 | running_time 0:12:03 | ETA 0:03:50
+Train | Sample # 18266 | train_acc 0.8906 | Num_Classes 176 | running_time 0:12:05 | ETA 0:03:47
+Train | Sample # 18330 | train_acc 0.8333 | Num_Classes 176 | running_time 0:12:07 | ETA 0:03:45
+Train | Sample # 18394 | train_acc 0.7760 | Num_Classes 176 | running_time 0:12:09 | ETA 0:03:42
+Train | Sample # 18458 | train_acc 0.7708 | Num_Classes 176 | running_time 0:12:12 | ETA 0:03:39
+Train | Sample # 18522 | train_acc 0.8646 | Num_Classes 176 | running_time 0:12:14 | ETA 0:03:37
+Train | Sample # 18586 | train_acc 0.8438 | Num_Classes 176 | running_time 0:12:16 | ETA 0:03:34
+Train | Sample # 18650 | train_acc 0.8333 | Num_Classes 176 | running_time 0:12:18 | ETA 0:03:31
+Train | Sample # 18714 | train_acc 0.8646 | Num_Classes 176 | running_time 0:12:20 | ETA 0:03:29
+Train | Sample # 18778 | train_acc 0.8385 | Num_Classes 176 | running_time 0:12:23 | ETA 0:03:26
+Train | Sample # 18842 | train_acc 0.8958 | Num_Classes 176 | running_time 0:12:25 | ETA 0:03:24
+Train | Sample # 18906 | train_acc 0.8646 | Num_Classes 176 | running_time 0:12:27 | ETA 0:03:21
+Train | Sample # 18970 | train_acc 0.8073 | Num_Classes 176 | running_time 0:12:29 | ETA 0:03:18
+Train | Sample # 19034 | train_acc 0.8229 | Num_Classes 176 | running_time 0:12:31 | ETA 0:03:16
+Test | Sample # 19034 | test_acc 0.5614 | 
+Train | Sample # 19098 | train_acc 0.8177 | Num_Classes 176 | running_time 0:12:41 | ETA 0:03:15
+Train | Sample # 19162 | train_acc 0.7552 | Num_Classes 176 | running_time 0:12:43 | ETA 0:03:12
+Train | Sample # 19226 | train_acc 0.8281 | Num_Classes 176 | running_time 0:12:45 | ETA 0:03:10
+Train | Sample # 19290 | train_acc 0.8125 | Num_Classes 176 | running_time 0:12:48 | ETA 0:03:07
+Train | Sample # 19354 | train_acc 0.8490 | Num_Classes 176 | running_time 0:12:50 | ETA 0:03:04
+Train | Sample # 19418 | train_acc 0.7865 | Num_Classes 176 | running_time 0:12:52 | ETA 0:03:02
+Train | Sample # 19482 | train_acc 0.8750 | Num_Classes 176 | running_time 0:12:54 | ETA 0:02:59
+Train | Sample # 19546 | train_acc 0.7865 | Num_Classes 176 | running_time 0:12:57 | ETA 0:02:57
+Train | Sample # 19610 | train_acc 0.8073 | Num_Classes 176 | running_time 0:12:59 | ETA 0:02:54
+Train | Sample # 19674 | train_acc 0.8073 | Num_Classes 176 | running_time 0:13:01 | ETA 0:02:51
+Train | Sample # 19738 | train_acc 0.8594 | Num_Classes 176 | running_time 0:13:03 | ETA 0:02:49
+Train | Sample # 19802 | train_acc 0.8854 | Num_Classes 176 | running_time 0:13:05 | ETA 0:02:46
+Train | Sample # 19866 | train_acc 0.8125 | Num_Classes 176 | running_time 0:13:08 | ETA 0:02:44
+Train | Sample # 19930 | train_acc 0.8490 | Num_Classes 176 | running_time 0:13:10 | ETA 0:02:41
+Train | Sample # 19994 | train_acc 0.8385 | Num_Classes 176 | running_time 0:13:12 | ETA 0:02:38
+Train | Sample # 20058 | train_acc 0.8490 | Num_Classes 176 | running_time 0:13:14 | ETA 0:02:36
+Test | Sample # 20058 | test_acc 0.5639 | 
+Train | Sample # 20122 | train_acc 0.8021 | Num_Classes 176 | running_time 0:13:24 | ETA 0:02:35
+Train | Sample # 20186 | train_acc 0.8281 | Num_Classes 176 | running_time 0:13:26 | ETA 0:02:32
+Train | Sample # 20250 | train_acc 0.7917 | Num_Classes 176 | running_time 0:13:28 | ETA 0:02:29
+Train | Sample # 20314 | train_acc 0.7969 | Num_Classes 176 | running_time 0:13:31 | ETA 0:02:27
+Train | Sample # 20378 | train_acc 0.8021 | Num_Classes 176 | running_time 0:13:33 | ETA 0:02:24
+Train | Sample # 20442 | train_acc 0.7656 | Num_Classes 176 | running_time 0:13:35 | ETA 0:02:21
+Train | Sample # 20506 | train_acc 0.8021 | Num_Classes 176 | running_time 0:13:37 | ETA 0:02:19
+Train | Sample # 20570 | train_acc 0.8594 | Num_Classes 176 | running_time 0:13:39 | ETA 0:02:16
+Train | Sample # 20634 | train_acc 0.8854 | Num_Classes 176 | running_time 0:13:42 | ETA 0:02:14
+Train | Sample # 20698 | train_acc 0.7812 | Num_Classes 176 | running_time 0:13:44 | ETA 0:02:11
+Train | Sample # 20762 | train_acc 0.8750 | Num_Classes 176 | running_time 0:13:46 | ETA 0:02:08
+Train | Sample # 20826 | train_acc 0.8906 | Num_Classes 176 | running_time 0:13:48 | ETA 0:02:06
+Train | Sample # 20890 | train_acc 0.8177 | Num_Classes 176 | running_time 0:13:50 | ETA 0:02:03
+Train | Sample # 20954 | train_acc 0.8594 | Num_Classes 176 | running_time 0:13:53 | ETA 0:02:01
+Train | Sample # 21018 | train_acc 0.8021 | Num_Classes 176 | running_time 0:13:55 | ETA 0:01:58
+Test | Sample # 21018 | test_acc 0.5659 | 
+Train | Sample # 21082 | train_acc 0.8958 | Num_Classes 176 | running_time 0:14:05 | ETA 0:01:56
+Train | Sample # 21121 | train_acc 0.8547 | Num_Classes 176 | running_time 0:14:07 | ETA 0:01:55
+Test | Sample # 21121 | test_acc 0.5659 | 
+[2-4] Update the information for the current task
+[2-5] Report task result
+Begin train for task4
+
+##################################################
+# Task 4 Session
+##################################################
+
+[2-1] Prepare a datalist for the current task
+Train | Sample # 21185 | train_acc 0.4010 | Num_Classes 196 | running_time 0:14:17 | ETA 0:01:53
+Train | Sample # 21249 | train_acc 0.5000 | Num_Classes 199 | running_time 0:14:19 | ETA 0:01:51
+Train | Sample # 21313 | train_acc 0.5104 | Num_Classes 200 | running_time 0:14:21 | ETA 0:01:48
+Train | Sample # 21377 | train_acc 0.4062 | Num_Classes 200 | running_time 0:14:24 | ETA 0:01:46
+Train | Sample # 21441 | train_acc 0.5521 | Num_Classes 200 | running_time 0:14:26 | ETA 0:01:43
+Train | Sample # 21505 | train_acc 0.5208 | Num_Classes 200 | running_time 0:14:28 | ETA 0:01:40
+Train | Sample # 21569 | train_acc 0.5990 | Num_Classes 200 | running_time 0:14:30 | ETA 0:01:38
+Train | Sample # 21633 | train_acc 0.6354 | Num_Classes 200 | running_time 0:14:32 | ETA 0:01:35
+Train | Sample # 21697 | train_acc 0.6094 | Num_Classes 200 | running_time 0:14:35 | ETA 0:01:32
+Train | Sample # 21761 | train_acc 0.5260 | Num_Classes 200 | running_time 0:14:37 | ETA 0:01:30
+Train | Sample # 21825 | train_acc 0.7344 | Num_Classes 200 | running_time 0:14:39 | ETA 0:01:27
+Train | Sample # 21889 | train_acc 0.6302 | Num_Classes 200 | running_time 0:14:41 | ETA 0:01:25
+Train | Sample # 21953 | train_acc 0.7188 | Num_Classes 200 | running_time 0:14:44 | ETA 0:01:22
+Train | Sample # 22017 | train_acc 0.6927 | Num_Classes 200 | running_time 0:14:46 | ETA 0:01:19
+Test | Sample # 22017 | test_acc 0.5365 | 
+Train | Sample # 22081 | train_acc 0.6615 | Num_Classes 200 | running_time 0:14:56 | ETA 0:01:17
+Train | Sample # 22145 | train_acc 0.7552 | Num_Classes 200 | running_time 0:14:59 | ETA 0:01:15
+Train | Sample # 22209 | train_acc 0.7188 | Num_Classes 200 | running_time 0:15:01 | ETA 0:01:12
+Train | Sample # 22273 | train_acc 0.6302 | Num_Classes 200 | running_time 0:15:03 | ETA 0:01:10
+Train | Sample # 22337 | train_acc 0.7083 | Num_Classes 200 | running_time 0:15:05 | ETA 0:01:07
+Train | Sample # 22401 | train_acc 0.7135 | Num_Classes 200 | running_time 0:15:07 | ETA 0:01:04
+Train | Sample # 22465 | train_acc 0.6979 | Num_Classes 200 | running_time 0:15:10 | ETA 0:01:02
+Train | Sample # 22529 | train_acc 0.7292 | Num_Classes 200 | running_time 0:15:12 | ETA 0:00:59
+Train | Sample # 22593 | train_acc 0.8125 | Num_Classes 200 | running_time 0:15:14 | ETA 0:00:56
+Train | Sample # 22657 | train_acc 0.8281 | Num_Classes 200 | running_time 0:15:16 | ETA 0:00:54
+Train | Sample # 22721 | train_acc 0.7865 | Num_Classes 200 | running_time 0:15:19 | ETA 0:00:51
+Train | Sample # 22785 | train_acc 0.7760 | Num_Classes 200 | running_time 0:15:21 | ETA 0:00:49
+Train | Sample # 22849 | train_acc 0.7812 | Num_Classes 200 | running_time 0:15:23 | ETA 0:00:46
+Train | Sample # 22913 | train_acc 0.7865 | Num_Classes 200 | running_time 0:15:25 | ETA 0:00:43
+Train | Sample # 22977 | train_acc 0.7552 | Num_Classes 200 | running_time 0:15:27 | ETA 0:00:41
+Train | Sample # 23041 | train_acc 0.7760 | Num_Classes 200 | running_time 0:15:30 | ETA 0:00:38
+Test | Sample # 23041 | test_acc 0.5518 | 
+Train | Sample # 23105 | train_acc 0.7708 | Num_Classes 200 | running_time 0:15:40 | ETA 0:00:36
+Train | Sample # 23169 | train_acc 0.8229 | Num_Classes 200 | running_time 0:15:42 | ETA 0:00:33
+Train | Sample # 23233 | train_acc 0.8177 | Num_Classes 200 | running_time 0:15:45 | ETA 0:00:31
+Train | Sample # 23297 | train_acc 0.7865 | Num_Classes 200 | running_time 0:15:47 | ETA 0:00:28
+Train | Sample # 23361 | train_acc 0.7917 | Num_Classes 200 | running_time 0:15:49 | ETA 0:00:25
+Train | Sample # 23425 | train_acc 0.8073 | Num_Classes 200 | running_time 0:15:51 | ETA 0:00:23
+Train | Sample # 23489 | train_acc 0.8281 | Num_Classes 200 | running_time 0:15:53 | ETA 0:00:20
+Train | Sample # 23553 | train_acc 0.7812 | Num_Classes 200 | running_time 0:15:56 | ETA 0:00:18
+Train | Sample # 23617 | train_acc 0.8490 | Num_Classes 200 | running_time 0:15:58 | ETA 0:00:15
+Train | Sample # 23681 | train_acc 0.8021 | Num_Classes 200 | running_time 0:16:00 | ETA 0:00:12
+Train | Sample # 23745 | train_acc 0.8490 | Num_Classes 200 | running_time 0:16:02 | ETA 0:00:10
+Train | Sample # 23809 | train_acc 0.8281 | Num_Classes 200 | running_time 0:16:05 | ETA 0:00:07
+Train | Sample # 23873 | train_acc 0.7656 | Num_Classes 200 | running_time 0:16:07 | ETA 0:00:05
+Train | Sample # 23937 | train_acc 0.8073 | Num_Classes 200 | running_time 0:16:09 | ETA 0:00:02
+Train | Sample # 24000 | train_acc 0.8624 | Num_Classes 200 | running_time 0:16:11 | ETA 0:00:00
+Test | Sample # 24000 | test_acc 0.5518 | 
+[2-4] Update the information for the current task
+[2-5] Report task result
+======== Summary =======
+A_auc 0.5818825976960983 | A_avg 0.6288511736965238 | A_last 0.5545 | F_last 0.07781330436806787
+========================
