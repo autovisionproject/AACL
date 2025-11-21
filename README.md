@@ -37,8 +37,13 @@ Default values are available in the code.
 
 ========= Run Baseline ====================
 ./scripts/<modelname>.sh
+
+For Gaussian sampler, rename class OnlineSampler to <tempName>  and rename class OnlineSampler_gaussian(Sampler) to OnlineSampler in utils/online_sampler.py
 ```
 ### Results
+Architectural generalizability of AACL
+<img src="image/models.png" width="800"> 
+
 Precision Matrix (P): A Key Component in AACL
 <img src="image/acc.png" width="700"> 
 
