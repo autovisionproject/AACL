@@ -1,4 +1,4 @@
-## Plasticity by Precision: Exemplar-free Analytic Adaptation for Continual Learning
+## Precision-Guided Plasticity: Exemplar-free Analytic Adaptation for Continual Learning
 We provide the complete codebase and pretrained models used to benchmark continual learning performance on three popular benchmark datasets for continual learning.
 ## Model
 <img src="image/AACL1.png" width="800"> 
@@ -40,11 +40,11 @@ Default values are available in the code.
 
 For Gaussian sampler, rename class OnlineSampler to <tempName>  and rename class OnlineSampler_gaussian(Sampler) to OnlineSampler in utils/online_sampler.py
 ```
-### Results
-Architectural generalizability of AACL
-<img src="image/models.png" width="800"> 
+## Results
+### Architectural generalizability of AACL
+<img src="image/models.png" width="500"> 
 
-Precision Matrix (P): A Key Component in AACL
+### Precision Matrix (P): A Key Component in AACL
 <img src="image/acc.png" width="700"> 
 
 ## Acknowledgement 
