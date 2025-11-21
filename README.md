@@ -26,13 +26,17 @@ CUDA Version: 12.4
 ```
 ### Train Model
 ```
-Tested Model: [vit,resnet18,resnet34,resnet50,efficientnet_b0]
-Tested Datset: [cifar100,tinyimagenet,imagenet-r]
+Tested Model: [vit,resnet18,resnet34,resnet50,efficientnet_b0,vitB16]
+Tested Datset: [cifar100,tinyimagenet,imagenet-r,imagenet1000]
+Mode Type: [direct or woodbury]
 
 ======== Run AACL ================
-#python aacl.py --model_name <name> --dataset <name> --seeds <value> --eta <value> --beta <value> --buffer_size <value> --gamma_main <value>
+#python aacl.py --model_name <name> --dataset <name> --seeds <value> --eta <value> --beta <value> --buffer_size <value> --gamma_main <value> --mode_type <value>
 
 Default values are available in the code.
+
+========= Run Baseline ====================
+./scripts/<modelname>.sh
 ```
 ### Results
 Precision Matrix (P): A Key Component in AACL
