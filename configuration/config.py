@@ -34,6 +34,7 @@ def base_parser():
     )
     # Model
     parser.add_argument("--model_name", type=str, default="resnet18", help="Model name")
+    parser.add_argument("--mode_type", type=str, default="direct", help="select mode type: direct or woodbury")
     parser.add_argument('--head', type=str, default='mlp',
                         help='projection head')
     
