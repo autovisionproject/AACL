@@ -52,6 +52,7 @@ def main_runner():
 
     for seed in [args.seeds]:
         arg_list = [
+            "--mode_type", args.mode_type,
             "--mode", args.mode,
             "--eta", str(args.eta),
             "--beta", str(args.beta),
