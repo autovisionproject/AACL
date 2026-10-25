@@ -64,9 +64,6 @@ def accuracy(output, target, topk=(1,), output_has_class_ids=False):
         return res
 
 def load_pretrain(target_model):
-    """
-        target_model: the model we want to replace the parameters (most likely un-trained)
-    """
     if os.path.isfile('models/best_checkpoint.pth'):
         checkpoint = torch.load('models/best_checkpoint.pth', map_location='cpu', weights_only=False)
         print("Load Deit Checkpoints")
