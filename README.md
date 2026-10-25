@@ -15,6 +15,7 @@ Please download the pre-trained deit vit network provided by Learnability and Al
 The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD)
 
 Save the *.pth file to ./models/best_checkpoint.pth path.
+
 Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
 **[Download DeiT ViT checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
 
