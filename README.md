@@ -30,8 +30,7 @@ Mode Type: [direct or woodbury]
 
 ======== Run AACL ================
 #python aacl.py --model_name <name> --dataset <name> --seeds <value> --eta <value> --beta <value> --buffer_size <value> --gamma_main <value> --mode_type <value>
-
-Default values are available in the code.
+```
 
 ## Citation
 * Please cite this work if you find it useful for your research.
