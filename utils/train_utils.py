@@ -68,7 +68,7 @@ def load_pretrain(target_model):
         target_model: the model we want to replace the parameters (most likely un-trained)
     """
     if os.path.isfile('models/best_checkpoint.pth'):
-        checkpoint = torch.load('models/best_checkpoint.pth', map_location='cpu')
+        checkpoint = torch.load('models/best_checkpoint.pth', map_location='cpu', weights_only=False)
         print("Load Deit Checkpoints")
       
     target = target_model.state_dict()
