@@ -12,9 +12,9 @@ Place the dataset file inside the ```local_datasets``` directory
 ## Download the Pretrained Backbone
 We use a **DeiT ViT** backbone pretrained on 611 ImageNet classes (excluding 389 overlapping classes with CIFAR and Tiny-ImageNet to avoid data leakage) for all experiments.
 Please download the pre-trained deit vit network provided by Learnability and Algorithm for Continual Learning from
-The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD or [pretrained model](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)
-Save the *.pth file to ./models/best_checkpoint.pth path.
+The pretrained model is sourced from [CLOOD](https://github.com/k-gyuhak/CLOOD)
 
+Save the *.pth file to ./models/best_checkpoint.pth path.
 Refer: Learnability and Algorithm for Continual Learning. ICML, 2023
 **[Download DeiT ViT checkpoint.pth](https://drive.google.com/file/d/1uEpqe6xo--8jdpOgR_YX3JqTHqj34oX6/view?usp=sharing)**
 
