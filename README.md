@@ -1,7 +1,5 @@
-## Precision by Plasticity: Exemplar-free Analytic Adaptation for Continual Learning
+## [TMLR: 2026] Precision by Plasticity: Exemplar-free Analytic Adaptation for Continual Learning
 We provide the complete codebase and pretrained models used to benchmark continual learning performance on three popular benchmark datasets for continual learning.
-## Model
-<img src="image/AACL1.png" width="800"> 
 
 ## Download Datasets
 We conduct our experiments on the following datasets:
@@ -35,8 +33,12 @@ Mode Type: [direct or woodbury]
 
 Default values are available in the code.
 
-========= Run Baseline ====================
-./scripts/<modelname>.sh
-
-For Gaussian sampler, rename class OnlineSampler to <tempName>  and rename class OnlineSampler_gaussian(Sampler) to OnlineSampler in utils/online_sampler.py
+## Citation
+* Please cite this work if you find it useful for your research.
 ```
+```
+
+## Acknowledgement
+This repo is built upon the following project. We sincerely appreciate for their contributions.
+1. [GACL](https://github.com/CHEN-YIZHU/GACL)  
+
