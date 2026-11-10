@@ -30,7 +30,7 @@ def main_runner():
     parser.add_argument("--n_tasks", type=int, default=5,help="default value :5")
     parser.add_argument("--n", type=int, default=50,help="default value :50")
     parser.add_argument("--m", type=int, default=10,help="default value :10")
-    parser.add_argument("--seeds", type=int, default="default")
+    parser.add_argument("--seeds", type=int, default=None)
     parser.add_argument("--gpu_transform", action="store_true")
     parser.add_argument("--use_amp", action="store_true")
     parser.add_argument("--note", type=str, default="AACL")
@@ -50,7 +50,7 @@ def main_runner():
     
     args = parser.parse_args()
     default_seed={'cifar100': 3,'tinyimagenet':5,'imagenet-r':5,'imagenet1000':5}
-    if args.seeds=="default":
+    if args.seeds==None:
         args.seeds=int(default_seed[args.dataset])
     for seed in [args.seeds]:
         arg_list = [
