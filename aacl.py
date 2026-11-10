@@ -49,7 +49,7 @@ def main_runner():
     parser.add_argument("--mode_type", type=str, default="direct", help="select mode type: direct or woodbury")
     
     args = parser.parse_args()
-    default_seed={'cifar100': 3,'tinyimagenet':,'imagenet-r':5,'imagenet1000':5}
+    default_seed={'cifar100': 3,'tinyimagenet':5,'imagenet-r':5,'imagenet1000':5}
     if args.seeds=="default":
         args.seeds=int(default_seed[args.dataset])
     for seed in [args.seeds]:
