@@ -30,7 +30,7 @@ def main_runner():
     parser.add_argument("--n_tasks", type=int, default=5,help="default value :5")
     parser.add_argument("--n", type=int, default=50,help="default value :50")
     parser.add_argument("--m", type=int, default=10,help="default value :10")
-    parser.add_argument("--seeds", type=int, required=True)
+    parser.add_argument("--seeds", type=int, default="default")
     parser.add_argument("--gpu_transform", action="store_true")
     parser.add_argument("--use_amp", action="store_true")
     parser.add_argument("--note", type=str, default="AACL")
@@ -47,9 +47,11 @@ def main_runner():
     parser.add_argument("--buffer_size", type=int, default=5000,help="default value :5000")
     parser.add_argument("--gamma_main", type=float, default=100)
     parser.add_argument("--mode_type", type=str, default="direct", help="select mode type: direct or woodbury")
-
+    
     args = parser.parse_args()
-
+    default_seed={'cifar100': 3,'tinyimagenet':,'imagenet-r':5,'imagenet1000':5}
+    if args.seeds=="default":
+        args.seeds=int(default_seed[args.dataset])
     for seed in [args.seeds]:
         arg_list = [
             "--mode_type", args.mode_type,
@@ -76,7 +78,6 @@ def main_runner():
             "--buffer_size", str(args.buffer_size),
             "--gamma_main", str(args.gamma_main),
         ]
-
         if args.gpu_transform:
             arg_list.append("--gpu_transform")
         if args.use_amp:
